@@ -7,11 +7,17 @@
   <body>
     <h1>Search for stuff, Yo.</h1>
     <form class="" action="">
-      <input type="text" name="artist" value="" placeholder="Artist Name">
+      <input type="text" name="artist" value="" placeholder="Search by Artist Name">
+      <input type="submit" value="Search">
+    </form>
+    <br>
+    <form class="" action="">
+      <input type="text" name="song" value="" placeholder="Search by Song Name">
       <input type="submit" value="Search">
     </form>
     {% autoescape off %}
-      {{ results }}
+      <h2>{{ artist }}</h2>
+      <h4>{{ results }}</h4>
     {% endautoescape %}
   </body>
 </html>

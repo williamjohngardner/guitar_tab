@@ -2,7 +2,7 @@
 from django.conf.urls import url
 from django.contrib import admin
 
-from app.views import tab_search_view
+from app.views import tab_search_view, tab_detail_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
